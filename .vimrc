@@ -8,6 +8,7 @@ set laststatus=2
 set complete+=kspell
 set splitright
 
+
 "Run test suites for vaious languages"
 "Plug 'janko/vim-test"
 
@@ -25,9 +26,15 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'preservim/NERDTree'
 Plug 'itchyny/lightline.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
+" or                                , { 'branch': '0.1.x' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Or build from source code by using npm
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 "List ends here. Plugins become visible to vim after this call."
 call plug#end()
 
